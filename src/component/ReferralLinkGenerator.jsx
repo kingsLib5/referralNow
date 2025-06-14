@@ -183,7 +183,7 @@ const ReferralGenerator = () => {
                     </div>
                     <div className="mt-2 text-xs text-gray-600">
                       {num === 1 && 'Details'}
-                      {num === 2 && 'Generate'}
+                      {num === 2 && 'Create'}
                       {num === 3 && 'Share'}
                     </div>
                   </div>

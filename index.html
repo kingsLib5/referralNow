@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/logo2.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codivora Referral</title>
+
+    <!-- Add this style block (or put in your external CSS) -->
+    <style>
+      .zoomed-round {
+        width: 600px;            /* set your desired size */
+        height: 600px;           /* same as width for perfect circle */
+        object-fit: cover;       /* crop/zoom to fill */
+        object-position: center; /* center the focus */
+        border-radius: 90%;      /* make it round */
+        /* optional: smooth transition on hover */
+        transition: transform 0.3s ease;
+      }
+      .zoomed-round:hover {
+        transform: scale(1.1);   /* slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Example usage: -->
+      <img
+        src="/src/assets/logo2.png"
+        alt="Codivora Logo"
+        class="zoomed-round"
+      />
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
